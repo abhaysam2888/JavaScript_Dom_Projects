@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style sheet link -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- tailwind cli -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- question 1 -->
+    <div class="flex flex-col items-center space-y-5">
+        <h1 class=" text-4xl font-semibold">Update Profile Picture</h1>
+        <input type="file" name="" id="fileInput" class=" text-xl ml-10">
+        <h2 class="text-xl font-semibold ">Your Profile Picture</h2>
+        <div id="imagePreview">
+
+        </div>
+    </div>
+
+    <!-- question 2-->
+    <div class="flex flex-col items-center mt-20">
+        <h1 class="text-2xl font-semibold mb-3">Click to change theme</h1>
+        <input type="submit" class="border border-black px-2 pt-1 font-medium" id="btn" value="Toggle Theme"></input>
+        <h1 class="text-2xl font-semibold mb-3" id="themeDisplay"></h1>
+    </div>
+
+    <!-- question 3 -->
+    <div class="flex flex-col items-center space-y-3 mt-20">
+        <h1 class="text-center text-3xl font-semibold">Counter</h1>
+        <div class="flex space-x-4">
+            <button id="btn2" class="border px-5 py-3 bg-slate-200">
+                <span class="text-5xl">+</span>
+            </button>
+            <h2 class="px-5 py-3 w-[75px]">
+                <span id="counterId" class="text-4xl"></span>
+            </h2>
+            <button id="btn3" class="border px-5 py-3 bg-slate-200 w-[75px]">
+                <span class="text-5xl">-</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- question 4 -->
+    <form action="" class="flex flex-col items-center space-y-3 mt-20">
+        <h2 class="text-3xl font-semibold">Sign Up Form</h2>
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" name="" id="name" placeholder="( Manimum 3 characters )" class="border border-black">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email" placeholder="( Enter Your Email )" class="border border-black">
+        </p>
+        <p>
+            <label for="Password">Password:</label>
+            <input type="password" name="" id="Password" placeholder="( Manimum 8 characters )" class="border border-black">
+        </p>
+        <input type="submit" value="Submit" id="submitForm" class="border text-xl border-black">
+    </form>
+
+    <!-- question 5 -->
+    <div class="flex flex-col items-center mt-20 space-y-3">
+        <h2 class="text-3xl font-semibold">Your Image is 
+            <span id="hAndV">hidden</span>
+        </h2>
+        <button id="buttonImage" class="border border-black px-3 py-1">Toggle Image</button>
+        <div>
+            <img src="https://images.pexels.com/photos/772667/pexels-photo-772667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="500px" id="imageDisplay" style="display: none;">
+        </div>
+    </div>
+
+    <!-- question 6 -->
+    <div class="flex flex-col items-center mt-20">
+        <h2 class="text-2xl font-semibold mb-5">Which is favorite Programming Language:</h2>
+        <select name="" id="selectInput" class="border border-black mb-28">
+        </select>
+    </div>
+
+    <!-- question 7 -->
+    <div class="flex flex-col items-center">
+        <input type="search" name="" id="searchFilter" class="border border-black placeholder:pl-2 px-2" placeholder="search For items">
+
+        <input type="submit" name="" id="searchBtn" value="submit" class="border w-16 text-center border-black mt-1">
+        
+        <h2 class="text-xl font-semibold mt-3 mb-3" id="result">Results:</h2>
+    </div>
+
+    <!-- question 8 -->
+    <div class="flex flex-col items-center mt-20 w-full h-96 justify-center" id="parentTime">
+        <div class="w-48 h-16 border border-white rounded-full flex justify-center items-center"> 
+            <p class="text-white font-medium text-2xl" id="watch">
+            </p>
+        </div>
+    </div>
+
+    <!-- question 9 -->
+    <div class="flex items-center flex-col mt-20 mb-10">
+        <div class="flex space-x-5">
+            <button class="border border-black px-4 rounded-full py-1 font-semibold" id="userLogin">
+                Login
+            </button>
+            <button class="border border-black px-4 rounded-full py-1 font-semibold" id="userLogout">
+                Logout
+            </button>
+        </div>
+        <div class="mt-3 font-semibold text-2xl" id="userState">~</div>
+    </div>
+
+
+
+
+    <!--js script -->
+    <script src="/dist/script.js"></script>
+</body>
+</html>
